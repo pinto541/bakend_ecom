@@ -8,9 +8,9 @@ const {
   update,
   remove,
   list
-} = require('../backend/controllers/category');
-const { requireSignin, isAuth, isAdmin } = require('../backend/controllers/auth');
-const { userById } = require('../backend/controllers/user');
+} = require('../controllers/category');
+const { requireSignin, isAuth, isAdmin } = require('../controllers/auth');
+const { userById } = require('../controllers/user');
 
 router.get('/category/:categoryId', read);
 router.post('/category/create/:userId', requireSignin, isAuth, isAdmin, create);
