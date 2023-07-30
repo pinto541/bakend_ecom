@@ -9,11 +9,11 @@ const expressValidator = require('express-validator');
 require('dotenv').config();
 // import routes
 const authRoutes = require('./routes/auth');
-const userRoutes = require('../routes/user');
-const categoryRoutes = require('../routes/category');
-const productRoutes = require('../routes/product');
-const braintreeRoutes = require('../routes/braintree');
-const orderRoutes = require('../routes/order');
+const userRoutes = require('./routes/user');
+const categoryRoutes = require('./routes/category');
+const productRoutes = require('./routes/product');
+const braintreeRoutes = require('./routes/braintree');
+const orderRoutes = require('./routes/order');
 
 // app
 const app = express();
