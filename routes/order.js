@@ -9,7 +9,7 @@ const {
   getStatusValues,
   orderById,
   updateOrderStatus,
-} = require('../backend/controllers/order');
+} = require('./controllers/order');
 
 const { decreaseQuantity } = require('./controllers/product');
 
