@@ -13,9 +13,9 @@ const {
   listBySearch,
   photo,
   listSearch
-} = require('../backend/controllers/product');
-const { requireSignin, isAuth, isAdmin } = require('../backend/controllers/auth');
-const { userById } = require('../backend/controllers/user');
+} = require('../controllers/product');
+const { requireSignin, isAuth, isAdmin } = require('../controllers/auth');
+const { userById } = require('../controllers/user');
 
 router.get('/product/:productId', read);
 router.post('/product/create/:userId', requireSignin, isAuth, isAdmin, create);
