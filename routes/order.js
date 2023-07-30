@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { requireSignin, isAuth, isAdmin } = require('../backend/controllers/auth');
-const { userById, addOrderToUserHistory } = require('../backend/controllers/user');
+const { requireSignin, isAuth, isAdmin } = require('../controllers/auth');
+const { userById, addOrderToUserHistory } = require('../controllers/user');
 const {
   create,
   listOrders,
