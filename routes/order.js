@@ -11,7 +11,7 @@ const {
   updateOrderStatus,
 } = require('../backend/controllers/order');
 
-const { decreaseQuantity } = require('../backend/controllers/product');
+const { decreaseQuantity } = require('../controllers/product');
 
 router.post(
   '/order/create/:userId',
