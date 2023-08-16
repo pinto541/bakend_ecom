@@ -42,6 +42,7 @@ connectDB();
 // middlewares
 app.use(cors({
   origin: 'http://localhost:3000',
+  https://obu01.vercel.app/
 }));
 app.use(morgan('dev'));
 app.use(bodyParser.json());
